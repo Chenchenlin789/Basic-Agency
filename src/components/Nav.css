@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 7%;
+    width: 100vw;
+  
+  }
+  
+  nav h3 {
+    padding-right: 13rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;  
+    width: 55%;  
+  }
+  
+  nav ul li {
+    font-size: 1em;   
+  }
+  
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .container{
+    padding-inline:2em;
+    max-width: 55rem;
+    margin-inline: auto;
+  }

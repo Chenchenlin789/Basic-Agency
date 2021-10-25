@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.fs-100 { font-size: 0.775rem;}
+.fs-300 { font-size: 1.125rem;}
+.fs-400 { font-size: 1.75rem;}
+.fs-600 { font-size: 2rem;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: var(--gap, 1rem);
 }
 
-.App-link {
-  color: #61dafb;
+.grid {
+  display:grid;
+  gap: var(--gap, 1rem);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flow { 
+  margin-top: 5rem;
+}
+/* .container{
+  padding-inline:2em;
+  max-width: 35rem;
+  margin-inline: auto;
+} */
+
+
+/* NAVITAGION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px 0;
+  width: 80vw;
+
+}
+
+nav h2 {
+  padding-left: 12rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none; 
+  
+  width: 35%;  
+}
+
+nav ul li {
+  padding-left: 55px ; 
+  font-size: 1em;  
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+/* first section */
+div {
+  max-width: 80vw;
+  margin-inline: auto;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+div h1:last-of-type{
+  text-align: right;
+}
+
+.buttons{
+  border-radius: 25px;
+  border: 1px solid black;
+  padding: 3px 40px;
+}
+
+.xSnap{
+  overflow: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+.xSnap > h2, h3, p{
+  scroll-snap-align: start;
+}
+
+.borders {
+ border-top: 1px solid black; 
+}
+
+.flex h2 {
+  margin: 20px 0;
+  width: 100vw;
+  padding-right: 10%;
 }

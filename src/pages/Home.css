@@ -1,0 +1,17 @@
+/* Box sizing */
+.flow { 
+    margin-top: 5rem;
+}
+
+h1 {
+    padding-inline:2em;
+    font-size: 3rem;
+    margin-inline: auto;
+}
+
+div h1:last-of-type{
+    text-align: right;
+}
+
+
+  
