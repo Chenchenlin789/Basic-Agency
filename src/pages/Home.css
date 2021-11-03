@@ -3,15 +3,34 @@
     margin-top: 5rem;
 }
 
-h1 {
-    padding-inline:2em;
-    font-size: 3rem;
-    margin-inline: auto;
-}
-
 div h1:last-of-type{
     text-align: right;
 }
 
+.Home__Work {
+  margin: 50px 20% 30px 0;
+  width: 70%;
+  
+}
+
+.Home__Work + a {
+    text-decoration: none;
+    color: black;
+}
+
+.xSnap{
+    height: 20%;
+    overflow: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+  }
+
+.xSnap > figure{
+    scroll-snap-align: start;
+  }
+
+/* img {
+      width: 30%;
+  } */
 
   

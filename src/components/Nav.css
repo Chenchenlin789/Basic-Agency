@@ -1,4 +1,4 @@
-nav {
+/* nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -16,20 +16,39 @@ nav {
     justify-content: space-between;
     list-style: none;  
     width: 55%;  
-  }
+  } */
   
-  nav ul li {
-    font-size: 1em;   
-  }
-  
-  a {
+  .link {
     list-style: none;
     text-decoration: none;
     color: black;
   }
   
-  .container{
-    padding-inline:2em;
-    max-width: 55rem;
-    margin-inline: auto;
-  }
+
+  /* NAVITAGION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px 0;
+  width: 80vw;
+
+}
+
+nav h2 {
+  padding-left: 12rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none; 
+  
+  width: 35%;  
+}
+
+nav ul li {
+  padding-left: 55px ; 
+  font-size: 1em;  
+}
+

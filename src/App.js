@@ -25,16 +25,12 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route path="/home" exact>
+          <Route path="/" exact >
             <Home />
           </Route>
-          {/* <Route path="/" >
-              <Home />
-          </Route> */}
           <Route path="/work" >
             <Work />
           </Route>
-
           <Route path="/about" >
             <About />
           </Route>
